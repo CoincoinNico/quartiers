@@ -1,0 +1,281 @@
+<% content_for :title, "Quartier d'Art" %>
+<% content_for :keywords, "oeuvre, peinture, art, toile chassis, reproduction, galerie, parisienne, artiste, peintre, paris, avenue emile zola, 75015, acheter, vendre, exposition, tableau, paysage, portrait, voiture, vehicule, automobile, voiture ancienne, collection,  dessin, image,  vente, artistique, vernis, format standard, creation, originale, d'art, decoration" %>
+<% content_for :description, "Artiste reconnue. Atelier sur les quais de Seine." %>
+<% content_for :body_class, "home page" %>
+
+<!-- Header -->
+<div id="header-wrapper">
+  <div id="header-inner">
+    <header>
+      <div id="logo">
+          <%= link_to image_tag('logo.jpg', alt: "Logo Quartier d'Art"), {action: 'home', controller: 'pages'} %>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="mobile-menu-toggle"><a href=""></a></div>
+
+      <!-- Navigation -->
+      <nav id="primary-nav">
+        <div class="menu-container">
+          <ul id="menu-1" class="menu">
+            <li class="menu-item current-menu-item current_page_item">
+              <%= link_to "Accueil", root_path %>
+            </li>
+            <li class="menu-item"><%= link_to "L'artiste", artist_path %></li>
+            <li class="menu-item"><%= link_to "Portfolio", portfolio_path %>
+              <ul class="sub-menu">
+                <li class="menu-item"><%= link_to "Peintures", paint_path %></li>
+                <li class="menu-item"><%= link_to "Vitraux", glass_path %></li>
+              </ul>
+            </li>
+            <li class="menu-item"><%= link_to "L'Atelier", workshop_path %>
+              <ul class="sub-menu">
+                <li class="menu-item"><%= link_to "Coaching", coach_path %></li>
+                <li class="menu-item"><%= link_to "Evénements", events_path %></li>
+                <li class="menu-item"><%= link_to "Réserve de l'Artiste", inventory_path %></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="index.html">Sur Mesure</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="index.html">Faire un cadeau</a></li>
+                <li class="menu-item"><a href="index.html">Fresques</a></li>
+                <li class="menu-item"><a href="index.html">Vitraux</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><%= link_to "Contact", contact_path %></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div style="clear:both;"></div>
+  </div>
+  <div style="clear:both;"></div>
+  <div class="header-widget-box">
+    <div class="header-outer-widget-wrapper">
+      <div class="header-widget-wrapper">
+        <ul>
+          <li class="widget widget_text">
+            <h4 class="widget-title">Nous trouver</h4>
+            <div class="textwidget">
+                <p>Au coeur de Paris, la galerie Quartier d'Art expose, édite, enseigne...</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <ul class="connect black">
+        <li><a href="https://www.facebook.com/quartierdart" title="Facebook" class="facebook">Facebook</a></li>
+<!--         <li><a href="#" title="LinkedIn" class="linkedin">LinkedIn</a></li>
+ -->  </ul>
+      <div style="clear:both;"></div>
+
+      <div class="mobile-widget-box-toggle-wrapper">
+          <a href="#">Toggle</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="clear:both;"></div>
+</div>
+  <!-- Header End -->
+
+  <!-- Content Area -->
+  <div id="content-wrapper" class="front-page front-page-full-width-media">
+
+      <!-- Epic Slider -->
+      <section class="slider-full-width slider-homepage clearfix">
+          <div id="epicSlider1" class="epic-slider slider-wrapper">
+              <ul id="slides">
+                  <li data-image="assets/chevaux/duo.jpg">
+                      <div class="es-caption" style="" data-caption="impact" data-caption-position="center" data-caption-width="550">
+                          <p><span class="size-2" style="margin-bottom:0;">UN TRAVAIL RECONNU</span><span class="size-6" >PARIS. NEW YORK. LOS ANGELES</span></p>
+                      </div>
+                  </li>
+                  <li data-image="assets/haiti/jalousie.jpg">
+                      <div class="es-caption" style="" data-caption="impact" data-caption-position="center" data-caption-width="770">
+                          <p><span class="size-2" style="margin-bottom:0;">INSPIRE DE VOYAGES </span><span class="size-5" >HAITI. MAROC. ETATS-UNIS</span> <a href="pindex.html" class="submit submitDarkGray" style="margin-bottom:0;" title="">Découvrir le Portfolio</a></p>
+                      </div>
+  <!--                     <div class="es-video-background-wrapper">
+                          <video id="fs1" class="es-video-background">
+                              <source src="http://demo.udthemes.com/raw/html/white/images/portfolio/beach-woman.m4v" type="video/mp4" />
+                              <source src="http://demo.udthemes.com/raw/html/white/images/portfolio/beach-woman.webm" type="video/webm" />
+                              <source src="http://demo.udthemes.com/raw/html/white/images/portfolio/beach-woman.ogv" type="video/ogg" />
+                          </video>
+                      </div> -->
+                  </li>
+                  <li data-image="assets/cadrage/affichage.jpg">
+                      <div class="es-caption" style="" data-caption="striped" data-caption-position="bottom-left" data-caption-width="450">
+                          <p>
+                              <span class="size-6" >HUILE ET IMPRESSIONS SUR TOILE</span><br />
+                              <span class="size-6" >NUMEROTEES, CERTIFIEES, SIGNEES</span><br />
+                              <a href="index.html" class="es-next-slide"><span class="size-6" >Accéder à la Galerie</span></a>
+                          </p>
+                      </div>
+                  </li>
+                  <li data-image="assets/winter/nuit.jpg">
+                      <div class="es-caption" style="" data-caption="elegant" data-caption-position="bottom-left" data-caption-width="350">
+                          <p>
+                              <span class="size-2" >DES THEMES VARIES</span><br />
+                              Haiti, Manhattan, Paysages, Natures Mortes, ... L'inspiration n'a pas de frontières. Nous pouvons même personnaliser des oeuvres selon vos désirs.
+                          </p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </section>
+      <!-- Epic Slider End -->
+
+      <!-- Portfolio Index Grid -->
+      <section class="portfolio-full-width-grid">
+          <div class="sub-section-title">
+              <h2>Dernières Expositions</h2>
+          </div>
+
+          <div id="grid" class="clearfix">
+              <div class="thumb" data-project-categories="haiti">
+                  <a href="portfolio/haiti/index.html" title="Video and Slider" data-caption="Haiti <span>CHEVAL SUR COLLINE</span>" >
+                      <img src="assets/haiti/cheval_opt.jpg" alt="Haiti Peinture">
+                  </a>
+              </div>
+              <div class="thumb" data-project-categories="cadrage">
+                  <a href="portfolio/cadrage/index.html" title="Cadrage" data-caption="Exposition Cadrages<span>COURBURE</span>">
+                      <img src="assets/cadrage/harmoniques_opt.jpg" alt="Courbure Cadrage">
+                  </a>
+              </div>
+              <div class="thumb" data-project-categories="fresques">
+                  <a href="portfolio/fresques/index.html" title="Fresques" data-caption="Fresques Personnalisées <span>COMMANDEZ LA VOTRE</span>" >
+                      <img src="assets/fresques/chene_opt.jpg" alt="Fresque Pierre et le Loup">
+                  </a>
+              </div>
+              <div class="thumb" data-project-categories="winter">
+                  <a href="portfolio/winter/index.html" title="Winter" data-caption="Soirs en hiver<span>ICE DREAM</span>">
+                      <img src="assets/winter/iceskating_opt.jpg" alt="Patin à glace en hiver">
+                  </a>
+              </div>
+              <div class="thumb" data-project-categories="manhattan">
+                  <a href="portfolio/manhattan/index.html" title="Manhattan" data-caption="Manhattan<span>QUEENSBORO</span>">
+                      <img src="assets/manhattan/queensboro_opt.jpg" alt="Manhattan queensboro">
+                  </a>
+              </div>
+              <div class="thumb" data-project-categories="paysages">
+                  <a href="portfolio/paysages/index.html" title="Paysages" data-caption="Paysages<span>PAR MA FENETRE</span>">
+                      <img src="assets/paysages/parmafenetre_opt.jpg" alt="Par ma fenêtre">
+                  </a>
+              </div>
+              <div class="thumb" data-project-categories="exotique">
+                  <a href="portfolio/exotique/index.html" title="Exotique"  data-caption="Exotique<span>TEMPETE DE SABLE</span>" >
+                      <img src="assets/exotique/sandstorm_opt.jpg" alt="Tempete de sable">
+                  </a>
+              </div>
+              <div class="thumb" data-project-categories="naturemorte">
+                  <a href="portfolio/naturemorte/index.html" title="Nature Morte Rose"  data-caption="Natures mortes<span>ROSE</span>">
+                      <img src="assets/naturemorte/rose_opt.jpg" alt="Rose">
+                  </a>
+              </div>
+          </div>
+
+          <div class="portfolio-button"><a href="portfolio.html" title="View all Projects">Voir toutes les Oeuvres &rarr;</a></div>
+      </section>
+      <!-- Portfolio Index Grid End -->
+      
+  </div>
+  <!-- Content Area End -->
+
+  <!-- Footer -->
+  <div id="footer-wrapper">
+
+      <div id="footer-top" class="clearfix">
+          <footer>
+              <div class="column_one_third column-footer-widget">
+                  <ul class="footer-widget">
+                      <li class="widget widget_text">
+                          <div class="textwidget">
+                              <p>
+                                  <img src="http://demo.udthemes.com/raw/html/white/images/logo-footer.png" alt="Raw" /><br />
+                                  « Si les maîtres hollandais avaient connu les techniques actuelles, qu’en auraient-ils fait ??
+                                  
+                                  Et si les impressionnistes avaient pu transcender leur talent avec des logiciels ?
+
+                                  Le pinceau et la toile coexistent aujourd’hui avec de nouveaux outils, Si en plus ils rendent l’art abordable, ne nous en privons pas ! »
+                              </p>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="column_one_third column-footer-widget">
+                  <ul class="footer-widget">
+                      <li class="widget widget_recent_entries">
+                          <h4 class="widget-title">L'ARTISTE</h4>
+                          <p>Brigitte SIBILLE est diplômée de l'Ecole Nationale Supérieure des Beaux Arts de Paris.</p>
+                          <p>Brigitte vous propose des ateliers peinture au Pont Mirabeau, 1 rue Balard dans le 15ème.</p>
+                          <!-- <ul>
+                              <li>
+                                  <a href="http://demo.udthemes.com/raw/html/white/blog/a-vimeo-post.html" title="A Vimeo Post">A Vimeo Post</a>
+                                  <span class="post-date">October 24, 2013</span>
+                              </li>
+                              <li>
+                                  <a href="http://demo.udthemes.com/raw/html/white/blog/photo-post.html" title="Photo Post">Photo Post</a>
+                                  <span class="post-date">October 24, 2013</span>
+                              </li>
+                              <li>
+                                  <a href="http://demo.udthemes.com/raw/html/white/blog/a-youtube-post.html" title="A YouTube Post">A YouTube Post</a>
+                                  <span class="post-date">October 24, 2013</span>
+                              </li>
+                              <li>
+                                  <a href="http://demo.udthemes.com/raw/html/white/blog/paginated-post.html" title="Paginated Post">Paginated Post</a>
+                                  <span class="post-date">October 23, 2013</span>
+                              </li>
+                              <li>
+                                  <a href="http://demo.udthemes.com/raw/html/white/blog/a-sticky-post.html" title="A Sticky Post">A Sticky Post</a>
+                                  <span class="post-date">October 20, 2013</span>
+                              </li>
+                              <li>
+                                  <a href="http://demo.udthemes.com/raw/html/white/blog/a-regular-post.html" title="A Regular Post">A Regular Post</a>
+                                  <span class="post-date">October 20, 2013</span>
+                              </li>
+                          </ul>
+   -->                    </li>
+                  </ul>
+              </div>
+
+              <div class="column_one_third column-footer-widget last">
+                  <ul class="footer-widget">
+                      <li class="widget widget_text">
+                          <h4 class="widget-title">Où trouver la galerie ?</h4>
+                          <div class="textwidget">
+                              <p>Vous pouvez nous trouver au 95 avenue Emile Zola dans le 15ème, ou commander en ligne.</p>
+                              <p>Tel: 06 06 95 00 95<br />
+                              Mail: 95@quartier-d-art.com</p>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          
+              <div class="clear"></div>
+          </footer>
+      </div>
+
+      <div id="footer-bottom">
+          <div id="footer-bottom-inner-wrapper">
+              <footer>
+                  <!-- Copyright info -->
+                  <p class="footer-copyright">&copy;2015, Quartier d'Art. Tous droits réservés.</p>
+              </footer>
+              <!-- "Back to Top" link -->
+              <a class="back-to-top" title="Back to top" href="#">Back to top</a>
+          </div>
+      </div>
+
+  </div>
+  <!-- Footer End -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-36756132-4', 'auto');
+    ga('send', 'pageview');
+
+  </script>

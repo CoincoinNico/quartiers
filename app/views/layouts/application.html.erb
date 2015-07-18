@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= yield(:title) %></title>
+  <!-- Pour niveau zoom sur mobile. Eviter zoom trop device-width/viewport. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="keywords" content="<%= yield(:keywords) %>">
+  <meta name="description" content="<%= yield(:description) %>">
+  
+  <%= favicon_link_tag ('favicon.png') %>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,700" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700" />
+  <!-- Scripts -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body class="<%= yield(:body_class) %>">
+
+<%= yield %>
+
+</body>
+</html>
