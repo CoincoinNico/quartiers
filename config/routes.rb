@@ -13,6 +13,10 @@ Rails.application.routes.draw do
   get 'reserve' => 'pages#inventory', as: :inventory
   get 'atelier' => 'pages#workshop', as: :workshop
   get 'contact' => 'pages#contact', as: :contact
+  get 'sur-mesure' => 'pages#taylor', as: :taylor
+  get 'cadeaux' => 'pages#gift', as: :gift
+  get 'fresques' => 'pages#fresco', as: :fresco
+  get 'cadeaux-vitraux' => 'pages#glassgift', as: :glassgift
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -17,8 +17,16 @@ class PagesController < ApplicationController
   end
   def inventory
   end
-  def home
+  def workshop
   end
-  def home
+  def contact
+  end
+  def taylor
+  end
+  def gift
+  end
+  def fresco
+  end
+  def glassgift
   end
 end
